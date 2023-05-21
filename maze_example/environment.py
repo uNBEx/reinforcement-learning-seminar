@@ -19,11 +19,11 @@ class Maze(object):
         for row in self.maze:
             for col in row:
                 if col == 0:
-                    print('', end="\t") # empty space
+                    print('⬜', end="") # empty space
                 elif col == 1:
-                    print('X', end="\t") # walls
+                    print('⬛', end="") # walls
                 elif col == 2:
-                    print('R', end="\t") # robot position
+                    print('🤖', end="") # robot position
             print("\n")
         print('---------------------------------')
 

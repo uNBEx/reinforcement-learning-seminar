@@ -7,6 +7,7 @@ if __name__ == '__main__':
     maze = Maze()
     robot = Agent(maze.maze, alpha=0.1, random_factor=0.25)
     moveHistory = []
+    maze.print_maze()
 
     for i in range(5000):
         if i % 1000 == 0:
